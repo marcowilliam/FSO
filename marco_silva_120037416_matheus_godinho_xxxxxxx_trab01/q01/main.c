@@ -10,13 +10,13 @@ int main(){
     Triangle triangle = input_points();
     float *sides_size = calculate_sides(triangle);
     float triangle_area = calculate_area(triangle);
+    float triangle_perimeter = calculate_perimeter(triangle);
 
-    printf("%f\n", triangle.points[0].coordinate[0][0]);
-    printf("%f\n", triangle.points[0].coordinate[0][1]);
-    printf("lado 1: %f\n",sides_size[0]);
-    printf("lado 2: %f\n",sides_size[1]);
-    printf("lado 3: %f\n",sides_size[2]);
+    printf("Lado 1: %.2f\n",sides_size[0]);
+    printf("Lado 2: %.2f\n",sides_size[1]);
+    printf("Lado 3: %.2f\n",sides_size[2]);
     printf("Area: %.2f\n", triangle_area);
+    printf("Perimetro: %.2f\n", triangle_perimeter);
 
 
 }

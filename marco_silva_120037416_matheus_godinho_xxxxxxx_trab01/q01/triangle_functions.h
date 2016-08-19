@@ -30,3 +30,20 @@ float calculate_area(Triangle triangle){
 
     return area;
 }
+
+float calculate_perimeter(Triangle triangle){
+
+    float *sides = calculate_sides(triangle);
+    float a = sides[0];
+    float b = sides[1];
+    float c = sides[2];
+    float perimeter = (a+b+c);
+
+    return perimeter;
+}
+
+//bool is_valid_triangle(Triangle triangle){
+
+    
+
+//}
