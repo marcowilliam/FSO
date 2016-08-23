@@ -1,5 +1,6 @@
 #include <stdlib.h>
 #include <stdio.h>
+#include <string.h>
 
 int main(){
     
@@ -12,6 +13,11 @@ int main(){
     printf("Valor da varável 'number2': %f\n", number2);
     printf("Endereco de 'number1': %p\n", &number1);
     printf("Endereco de 'dPtr': %p\n", dPtr);
-
+    scanf("%s", s1);
+    strcpy(s2,s1);
+    printf("%d\n", strcmp(s1,s2)); 
+    strcat(s1,s2);
+    printf("%s\n", s1);
+    printf("%lu\n", strlen(s1));
     return 0;
 }
