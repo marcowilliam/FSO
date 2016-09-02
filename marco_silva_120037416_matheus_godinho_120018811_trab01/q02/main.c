@@ -31,10 +31,9 @@ int main(){
         ch = strtok(NULL,s);
     }
 
-    
-    if(strcmp(my_string,"-d")==0 || strlen(my_string)==0){
+    if(strcmp(my_string,"-d") == 10 || strlen(my_string)==1){
         ascendingOrder(array,tamanho);
-    }else{
+    }else if(strcmp(my_string, "-r") == 10){
         descendingOrder(array,tamanho);
     }
 
